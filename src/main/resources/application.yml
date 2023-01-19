@@ -1,0 +1,17 @@
+# mysql数据库配置
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.142:3307/security_learn?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: chan
+
+mybatis-plus:
+  configuration:
+    # 开启SQL日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    com.hzc: debug
